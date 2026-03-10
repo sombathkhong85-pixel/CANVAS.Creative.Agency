@@ -1,144 +1,400 @@
-<!DOCTYPE html>
-<html lang="en">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-<head>
+html{
+scroll-behavior:smooth;
+}
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+body{
 
-<title>CANVAS Creative Agency</title>
+font-family:'Poppins',sans-serif;
 
-<link rel="stylesheet" href="css/style.css">
+background:linear-gradient(270deg,#0f0f0f,#1a1a2e,#0f0f0f);
+background-size:400% 400%;
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+animation:bgMove 15s infinite;
 
-</head>
+color:white;
 
-<body>
+}
 
-<nav>
+@keyframes bgMove{
 
-<div class="logo">
-<img src="images/logo.png">
-<span>CANVAS</span>
-</div>
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 
-<div class="menu-toggle" id="menu-toggle">☰</div>
-
-<ul id="nav-links">
-
-<li><a href="#home">Home</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#portfolio">Portfolio</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</nav>
+}
 
 
-<section id="home" class="hero">
+/* NAVBAR */
 
-<div class="hero-content">
+nav{
 
-<h1>Your Brand, Our Canvas</h1>
+display:flex;
+justify-content:space-between;
+align-items:center;
 
-<p>Creative marketing solutions to elevate your brand.</p>
+padding:20px 10%;
 
-<button>Start a Project</button>
+background:rgba(255,255,255,0.05);
 
-</div>
+backdrop-filter:blur(10px);
 
-</section>
+position:sticky;
+top:0;
 
+z-index:1000;
 
-<section id="services" class="services">
+}
 
-<h2>Our Services</h2>
+nav ul{
 
-<div class="services-grid">
+display:flex;
+gap:30px;
+list-style:none;
 
-<div class="card">
-<h3>Social Media Marketing</h3>
-<p>Grow your brand with engaging campaigns.</p>
-</div>
+}
 
-<div class="card">
-<h3>Branding</h3>
-<p>Build a strong identity that stands out.</p>
-</div>
+nav a{
 
-<div class="card">
-<h3>Packaging Design</h3>
-<p>Beautiful packaging that attracts customers.</p>
-</div>
+text-decoration:none;
+color:white;
 
-</div>
+}
 
-</section>
-
-
-<section id="portfolio" class="services">
-
-<h2>Portfolio</h2>
-
-<div class="services-grid">
-
-<div class="card">Project One</div>
-<div class="card">Project Two</div>
-<div class="card">Project Three</div>
-
-</div>
-
-</section>
+nav a:hover{
+color:#6c5cff;
+}
 
 
-<section id="about" class="services">
+/* LOGO */
 
-<h2>About Us</h2>
+.logo{
 
-<p>We are a creative marketing agency focused on branding, design, and digital growth.</p>
+display:flex;
+align-items:center;
+gap:10px;
 
-</section>
+font-weight:600;
+font-size:20px;
 
+}
 
-<section id="contact" class="contact">
-
-<h2>Start Your Project</h2>
-
-<form>
-
-<input type="text" placeholder="Your Name" required>
-
-<input type="email" placeholder="Your Email" required>
-
-<textarea placeholder="Tell us about your project"></textarea>
-
-<button type="submit">Send Message</button>
-
-</form>
-
-</section>
+.logo img{
+height:40px;
+}
 
 
-<footer>
+/* HERO */
 
-<p>© 2026 CANVAS Creative Agency</p>
+.hero{
 
-<div class="footer-links">
+height:90vh;
 
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#portfolio">Portfolio</a>
-<a href="#contact">Contact</a>
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
 
-</div>
+}
 
-</footer>
+.hero h1{
+
+font-size:60px;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+opacity:0.8;
+margin-bottom:30px;
+
+}
+
+.hero button{
+
+padding:14px 30px;
+
+border:none;
+
+border-radius:30px;
+
+background:#6c5cff;
+
+color:white;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.hero button:hover{
+
+transform:scale(1.05);
+
+}
 
 
-<script src="js/script.js"></script>
+/* SERVICES */
 
-</body>
-</html>
+.services{
+
+padding:100px 10%;
+text-align:center;
+
+}
+
+.services-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+
+}
+
+.card{
+
+background:#1b1b1b;
+
+padding:40px;
+
+border-radius:12px;
+
+transition:0.4s;
+
+transform-style:preserve-3d;
+
+}
+
+.card:hover{
+
+transform:rotateY(10deg) translateY(-10px);
+
+background:#222;
+
+}
+
+
+/* PORTFOLIO */
+
+.portfolio{
+
+padding:100px 10%;
+text-align:center;
+
+}
+
+.portfolio-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+
+}
+
+.project{
+
+background:#1b1b1b;
+
+height:200px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:10px;
+
+transition:0.3s;
+
+}
+
+.project:hover{
+
+transform:scale(1.05);
+
+background:#333;
+
+}
+
+
+/* ABOUT */
+
+.about{
+
+padding:100px 20%;
+text-align:center;
+
+line-height:1.7;
+
+}
+
+
+/* CONTACT */
+
+.contact{
+
+padding:100px 10%;
+text-align:center;
+
+}
+
+.contact form{
+
+max-width:500px;
+margin:auto;
+
+display:flex;
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.contact input,
+.contact textarea{
+
+padding:15px;
+border:none;
+border-radius:8px;
+
+}
+
+.contact button{
+
+padding:14px;
+
+border:none;
+
+border-radius:30px;
+
+background:#6c5cff;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+
+/* FOOTER */
+
+footer{
+
+padding:40px;
+text-align:center;
+
+background:#111;
+
+}
+
+.footer-links{
+
+margin-top:10px;
+
+display:flex;
+justify-content:center;
+gap:20px;
+
+}
+
+.footer-links a{
+
+color:white;
+text-decoration:none;
+
+opacity:0.7;
+
+}
+
+.footer-links a:hover{
+opacity:1;
+}
+
+
+/* MOBILE MENU */
+
+.menu-toggle{
+
+display:none;
+font-size:28px;
+cursor:pointer;
+
+}
+
+@media(max-width:768px){
+
+nav ul{
+
+position:absolute;
+top:70px;
+right:0;
+
+background:#111;
+
+flex-direction:column;
+
+width:200px;
+
+padding:20px;
+
+display:none;
+
+}
+
+nav ul.active{
+display:flex;
+}
+
+.menu-toggle{
+display:block;
+}
+
+}
+
+
+/* SCROLL REVEAL */
+
+.reveal{
+
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+
+}
+
+.reveal.active{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+
+/* CUSTOM CURSOR */
+
+.cursor{
+
+width:20px;
+height:20px;
+
+border:2px solid white;
+
+border-radius:50%;
+
+position:fixed;
+
+pointer-events:none;
+
+transform:translate(-50%,-50%);
+
+z-index:9999;
+
+}

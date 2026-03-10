@@ -1,39 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>CANVAS Creative Agency</title>
 
 <link rel="stylesheet" href="style.css">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<div class="cursor"></div>
+<!-- Floating Background Logo -->
+<img src="CANVAS.png" class="floating-logo">
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+<div class="logo-text">
+CANVAS
+</div>
 
 <nav>
-
-<div class="logo">
-<img src="CANVAS.png">
-<span>CANVAS</span>
-</div>
-
-<div class="nav-right">
-
-<button id="theme-toggle">🌙</button>
-
-<div class="menu-toggle" id="menu-toggle">☰</div>
-
-</div>
-
-<ul id="nav-links">
+<ul>
 
 <li><a href="#home">Home</a></li>
 <li><a href="#services">Services</a></li>
@@ -42,46 +33,48 @@
 <li><a href="#contact">Contact</a></li>
 
 </ul>
-
 </nav>
 
+<button id="theme-toggle">🌙</button>
+
+</header>
+
+<!-- HERO -->
 
 <section id="home" class="hero">
 
-<div class="particles"></div>
-
-<div class="hero-content">
-
 <h1>Your Brand, Our Canvas</h1>
 
-<p>Creative marketing solutions to elevate your brand.</p>
+<p>
+Creative marketing solutions to elevate your brand.
+</p>
 
-<a href="#contact" class="glow-btn">Start a Project</a>
-
-</div>
+<a href="#contact" class="cta-button">Start a Project</a>
 
 </section>
 
 
-<section id="services" class="services">
+<!-- SERVICES -->
+
+<section id="services" class="section">
 
 <h2>Our Services</h2>
 
 <div class="services-grid">
 
-<div class="card reveal">
+<div class="card">
 <h3>Social Media Marketing</h3>
 <p>Grow your brand with engaging campaigns.</p>
 </div>
 
-<div class="card reveal">
+<div class="card">
 <h3>Branding</h3>
-<p>Build a strong identity that stands out.</p>
+<p>Create a powerful brand identity.</p>
 </div>
 
-<div class="card reveal">
+<div class="card">
 <h3>Packaging Design</h3>
-<p>Beautiful packaging that attracts customers.</p>
+<p>Design that stands out on shelves.</p>
 </div>
 
 </div>
@@ -89,68 +82,56 @@
 </section>
 
 
-<section id="portfolio" class="portfolio">
+<!-- PORTFOLIO -->
+
+<section id="portfolio" class="section">
 
 <h2>Portfolio</h2>
 
-<div class="portfolio-grid">
-
-<div class="project reveal">Project One</div>
-<div class="project reveal">Project Two</div>
-<div class="project reveal">Project Three</div>
-
-</div>
+<p>Our recent creative work.</p>
 
 </section>
 
 
-<section id="about" class="about reveal">
+<!-- ABOUT -->
+
+<section id="about" class="section">
 
 <h2>About Us</h2>
 
 <p>
-We are a creative marketing agency focused on branding,
-design and digital growth.
+We are a creative marketing agency focused on building strong brands and meaningful digital experiences.
 </p>
 
 </section>
 
 
-<section id="contact" class="contact">
+<!-- CONTACT -->
 
-<h2>Start Your Project</h2>
+<section id="contact" class="section">
+
+<h2>Contact Us</h2>
 
 <form action="https://formspree.io/f/mojkeqar" method="POST">
-
-<p id="form-status"></p>
-  
-<form action="https://formspree.io/f/xxxxxabc" method="POST">
 
 <input type="text" name="name" placeholder="Your Name" required>
 
 <input type="email" name="email" placeholder="Your Email" required>
 
-<textarea name="message" placeholder="Tell us about your project"></textarea>
+<textarea name="message" placeholder="Your Message"></textarea>
 
-<button class="glow-btn">Send Message</button>
+<button type="submit">Send Message</button>
 
 </form>
 
 </section>
 
 
+<!-- FOOTER -->
+
 <footer>
 
 <p>© 2026 CANVAS Creative Agency</p>
-
-<div class="footer-links">
-
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#portfolio">Portfolio</a>
-<a href="#contact">Contact</a>
-
-</div>
 
 </footer>
 

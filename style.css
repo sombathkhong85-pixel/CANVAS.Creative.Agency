@@ -9,344 +9,232 @@ scroll-behavior:smooth;
 }
 
 body{
-
 font-family:'Poppins',sans-serif;
-
-background:linear-gradient(270deg,#0f0f0f,#1a1a2e,#0f0f0f);
-background-size:400% 400%;
-
-animation:bgMove 15s infinite;
-
+background:#0f0f0f;
 color:white;
-
+transition:0.3s;
 }
 
-@keyframes bgMove{
+/* LIGHT MODE */
 
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
-
+body.light{
+background:white;
+color:black;
 }
-
 
 /* NAVBAR */
 
 nav{
-
 display:flex;
 justify-content:space-between;
 align-items:center;
-
 padding:20px 10%;
-
 background:rgba(255,255,255,0.05);
-
 backdrop-filter:blur(10px);
-
 position:sticky;
 top:0;
-
-z-index:1000;
-
 }
 
 nav ul{
-
 display:flex;
 gap:30px;
 list-style:none;
-
 }
 
 nav a{
-
 text-decoration:none;
-color:white;
-
+color:inherit;
 }
 
-nav a:hover{
-color:#6c5cff;
+.nav-right{
+display:flex;
+gap:20px;
+align-items:center;
 }
-
 
 /* LOGO */
 
 .logo{
-
 display:flex;
 align-items:center;
 gap:10px;
-
 font-weight:600;
-font-size:20px;
-
 }
 
 .logo img{
 height:40px;
 }
 
-
 /* HERO */
 
 .hero{
-
 height:90vh;
-
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
-
+position:relative;
+overflow:hidden;
 }
 
 .hero h1{
-
 font-size:60px;
 margin-bottom:20px;
-
 }
 
-.hero p{
+/* PARTICLES */
 
-opacity:0.8;
-margin-bottom:30px;
-
+.particles{
+position:absolute;
+width:100%;
+height:100%;
+background-image:radial-gradient(#6c5cff 1px,transparent 1px);
+background-size:40px 40px;
+opacity:0.2;
 }
 
-.hero button{
+/* BUTTON */
+
+.glow-btn{
 
 padding:14px 30px;
-
 border:none;
-
 border-radius:30px;
 
-background:#6c5cff;
+background:linear-gradient(45deg,#6c5cff,#9b8cff);
 
 color:white;
 
-font-weight:600;
-
 cursor:pointer;
+
+box-shadow:0 0 15px rgba(108,92,255,0.6);
 
 transition:0.3s;
 
 }
 
-.hero button:hover{
+.glow-btn:hover{
 
 transform:scale(1.05);
+box-shadow:0 0 25px rgba(108,92,255,1);
 
 }
-
 
 /* SERVICES */
 
 .services{
-
 padding:100px 10%;
 text-align:center;
-
 }
 
 .services-grid{
-
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
-
 }
 
 .card{
-
 background:#1b1b1b;
-
 padding:40px;
-
 border-radius:12px;
-
 transition:0.4s;
-
-transform-style:preserve-3d;
-
 }
 
 .card:hover{
-
-transform:rotateY(10deg) translateY(-10px);
-
+transform:translateY(-10px);
 background:#222;
-
 }
-
 
 /* PORTFOLIO */
 
 .portfolio{
-
 padding:100px 10%;
 text-align:center;
-
 }
 
 .portfolio-grid{
-
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
-
 }
 
 .project{
-
-background:#1b1b1b;
-
 height:200px;
-
+background:#1b1b1b;
 display:flex;
 align-items:center;
 justify-content:center;
-
 border-radius:10px;
-
 transition:0.3s;
-
 }
 
 .project:hover{
-
 transform:scale(1.05);
-
-background:#333;
-
 }
-
 
 /* ABOUT */
 
 .about{
-
 padding:100px 20%;
 text-align:center;
-
-line-height:1.7;
-
 }
-
 
 /* CONTACT */
 
 .contact{
-
 padding:100px 10%;
 text-align:center;
-
 }
 
 .contact form{
-
 max-width:500px;
 margin:auto;
-
 display:flex;
 flex-direction:column;
-
 gap:20px;
-
 }
 
 .contact input,
 .contact textarea{
-
 padding:15px;
 border:none;
 border-radius:8px;
-
 }
-
-.contact button{
-
-padding:14px;
-
-border:none;
-
-border-radius:30px;
-
-background:#6c5cff;
-
-color:white;
-
-cursor:pointer;
-
-}
-
 
 /* FOOTER */
 
 footer{
-
 padding:40px;
 text-align:center;
-
 background:#111;
-
 }
 
 .footer-links{
-
 margin-top:10px;
-
 display:flex;
 justify-content:center;
 gap:20px;
-
 }
 
-.footer-links a{
-
-color:white;
-text-decoration:none;
-
-opacity:0.7;
-
-}
-
-.footer-links a:hover{
-opacity:1;
-}
-
-
-/* MOBILE MENU */
+/* MOBILE */
 
 .menu-toggle{
-
 display:none;
 font-size:28px;
 cursor:pointer;
-
 }
 
 @media(max-width:768px){
 
 nav ul{
-
 position:absolute;
 top:70px;
 right:0;
-
 background:#111;
-
 flex-direction:column;
-
 width:200px;
-
 padding:20px;
-
 display:none;
-
 }
 
 nav ul.active{
@@ -359,42 +247,28 @@ display:block;
 
 }
 
-
-/* SCROLL REVEAL */
+/* SCROLL ANIMATION */
 
 .reveal{
-
 opacity:0;
 transform:translateY(40px);
 transition:1s;
-
 }
 
 .reveal.active{
-
 opacity:1;
 transform:translateY(0);
-
 }
 
-
-/* CUSTOM CURSOR */
+/* CURSOR */
 
 .cursor{
-
 width:20px;
 height:20px;
-
 border:2px solid white;
-
 border-radius:50%;
-
 position:fixed;
-
 pointer-events:none;
-
 transform:translate(-50%,-50%);
-
 z-index:9999;
-
 }

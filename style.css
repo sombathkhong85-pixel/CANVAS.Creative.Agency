@@ -272,3 +272,30 @@ pointer-events:none;
 transform:translate(-50%,-50%);
 z-index:9999;
 }
+/* LIGHT MODE FIX */
+
+body.light {
+background:#f5f5f5;
+color:#111;
+}
+
+body.light nav {
+background:rgba(255,255,255,0.8);
+}
+
+body.light .card,
+body.light .project {
+background:#ffffff;
+color:#111;
+}
+
+body.light footer {
+background:#f0f0f0;
+}
+
+body.light input,
+body.light textarea{
+background:#fff;
+color:#000;
+border:1px solid #ddd;
+}

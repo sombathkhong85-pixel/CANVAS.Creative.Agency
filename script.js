@@ -10,7 +10,7 @@ navLinks.classList.toggle("active");
 });
 
 
-// scroll reveal animation
+// scroll reveal
 
 function reveal(){
 
@@ -45,3 +45,14 @@ cursor.style.left = e.clientX + "px";
 cursor.style.top = e.clientY + "px";
 
 });
+
+
+// dark light mode
+
+const toggle = document.getElementById("theme-toggle");
+
+toggle.onclick = () => {
+
+document.body.classList.toggle("light");
+
+};

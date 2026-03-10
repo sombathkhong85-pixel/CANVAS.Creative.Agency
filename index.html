@@ -16,30 +16,29 @@
 
 <body>
 
-
 <nav>
 
 <div class="logo">
-
 <img src="CANVAS.png">
 <span>CANVAS</span>
-
 </div>
 
-<ul>
+<div class="menu-toggle" id="menu-toggle">☰</div>
 
-<li><a href="#">Home</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#">Portfolio</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Contact</a></li>
+<ul id="nav-links">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
 
 </ul>
 
 </nav>
 
 
-<section class="hero">
+<section id="home" class="hero">
 
 <div class="hero-content">
 
@@ -54,7 +53,7 @@
 </section>
 
 
-<section class="services">
+<section id="services" class="services">
 
 <h2>Our Services</h2>
 
@@ -67,7 +66,7 @@
 
 <div class="card">
 <h3>Branding</h3>
-<p>Build a powerful identity that stands out.</p>
+<p>Build a strong identity that stands out.</p>
 </div>
 
 <div class="card">
@@ -80,12 +79,66 @@
 </section>
 
 
+<section id="portfolio" class="services">
+
+<h2>Portfolio</h2>
+
+<div class="services-grid">
+
+<div class="card">Project One</div>
+<div class="card">Project Two</div>
+<div class="card">Project Three</div>
+
+</div>
+
+</section>
+
+
+<section id="about" class="services">
+
+<h2>About Us</h2>
+
+<p>We are a creative marketing agency focused on branding, design, and digital growth.</p>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+<h2>Start Your Project</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea placeholder="Tell us about your project"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+
 <footer>
 
 <p>© 2026 CANVAS Creative Agency</p>
 
+<div class="footer-links">
+
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+
+</div>
+
 </footer>
 
+
+<script src="js/script.js"></script>
 
 </body>
 </html>

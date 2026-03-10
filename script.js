@@ -56,3 +56,37 @@ toggle.addEventListener("click", () => {
 document.body.classList.toggle("light");
 
 });
+
+const form = document.querySelector("form");
+const status = document.getElementById("form-status");
+
+async function handleSubmit(event) {
+
+event.preventDefault();
+
+let data = new FormData(event.target);
+
+fetch(event.target.action, {
+method: form.method,
+body: data,
+headers: {
+'Accept': 'application/json'
+}
+}).then(response => {
+
+if (response.ok) {
+
+status.innerHTML = "Message sent successfully!";
+form.reset();
+
+} else {
+
+status.innerHTML = "Oops! Something went wrong.";
+
+}
+
+});
+
+}
+
+form.addEventListener("submit", handleSubmit);

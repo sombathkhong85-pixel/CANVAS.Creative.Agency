@@ -51,8 +51,8 @@ cursor.style.top = e.clientY + "px";
 
 const toggle = document.getElementById("theme-toggle");
 
-toggle.onclick = () => {
+toggle.addEventListener("click", () => {
 
 document.body.classList.toggle("light");
 
-};
+});

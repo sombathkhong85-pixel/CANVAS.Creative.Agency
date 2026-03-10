@@ -1,182 +1,144 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body{
+<head>
 
-font-family:'Poppins',sans-serif;
-background:#0f0f0f;
-color:white;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-}
+<title>CANVAS Creative Agency</title>
 
-/* NAVBAR */
+<link rel="stylesheet" href="css/style.css">
 
-nav{
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-display:flex;
-justify-content:space-between;
-align-items:center;
+</head>
 
-padding:20px 10%;
+<body>
 
-background:rgba(255,255,255,0.05);
+<nav>
 
-backdrop-filter:blur(10px);
+<div class="logo">
+<img src="images/logo.png">
+<span>CANVAS</span>
+</div>
 
-position:sticky;
-top:0;
+<div class="menu-toggle" id="menu-toggle">☰</div>
 
-}
+<ul id="nav-links">
 
-nav ul{
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
 
-display:flex;
-gap:30px;
-list-style:none;
+</ul>
 
-}
+</nav>
 
-nav a{
 
-text-decoration:none;
-color:white;
-font-weight:500;
+<section id="home" class="hero">
 
-}
+<div class="hero-content">
 
-/* LOGO */
+<h1>Your Brand, Our Canvas</h1>
 
-.logo{
+<p>Creative marketing solutions to elevate your brand.</p>
 
-display:flex;
-align-items:center;
-gap:10px;
+<button>Start a Project</button>
 
-font-weight:600;
-font-size:20px;
+</div>
 
-}
+</section>
 
-.logo img{
 
-height:40px;
+<section id="services" class="services">
 
-}
+<h2>Our Services</h2>
 
-/* HERO */
+<div class="services-grid">
 
-.hero{
+<div class="card">
+<h3>Social Media Marketing</h3>
+<p>Grow your brand with engaging campaigns.</p>
+</div>
 
-height:90vh;
+<div class="card">
+<h3>Branding</h3>
+<p>Build a strong identity that stands out.</p>
+</div>
 
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
+<div class="card">
+<h3>Packaging Design</h3>
+<p>Beautiful packaging that attracts customers.</p>
+</div>
 
-background:linear-gradient(135deg,#1a1a1a,#3b0aff);
+</div>
 
-}
+</section>
 
-.hero h1{
 
-font-size:60px;
-margin-bottom:20px;
+<section id="portfolio" class="services">
 
-}
+<h2>Portfolio</h2>
 
-.hero p{
+<div class="services-grid">
 
-opacity:0.8;
-margin-bottom:30px;
+<div class="card">Project One</div>
+<div class="card">Project Two</div>
+<div class="card">Project Three</div>
 
-}
+</div>
 
-.hero button{
+</section>
 
-padding:14px 30px;
 
-border:none;
+<section id="about" class="services">
 
-border-radius:30px;
+<h2>About Us</h2>
 
-background:#6c5cff;
+<p>We are a creative marketing agency focused on branding, design, and digital growth.</p>
 
-color:white;
+</section>
 
-font-weight:600;
 
-cursor:pointer;
+<section id="contact" class="contact">
 
-transition:0.3s;
+<h2>Start Your Project</h2>
 
-}
+<form>
 
-.hero button:hover{
+<input type="text" placeholder="Your Name" required>
 
-transform:scale(1.05);
+<input type="email" placeholder="Your Email" required>
 
-background:#5848ff;
+<textarea placeholder="Tell us about your project"></textarea>
 
-}
+<button type="submit">Send Message</button>
 
-/* SERVICES */
+</form>
 
-.services{
+</section>
 
-padding:100px 10%;
-text-align:center;
 
-}
+<footer>
 
-.services h2{
+<p>© 2026 CANVAS Creative Agency</p>
 
-margin-bottom:60px;
-font-size:36px;
+<div class="footer-links">
 
-}
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
 
-.services-grid{
+</div>
 
-display:grid;
+</footer>
 
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 
-gap:30px;
+<script src="js/script.js"></script>
 
-}
-
-.card{
-
-background:#1b1b1b;
-
-padding:40px;
-
-border-radius:12px;
-
-transition:0.3s;
-
-}
-
-.card:hover{
-
-transform:translateY(-10px);
-
-background:#222;
-
-}
-
-/* FOOTER */
-
-footer{
-
-padding:30px;
-
-text-align:center;
-
-opacity:0.6;
-
-}
+</body>
+</html>

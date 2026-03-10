@@ -77,9 +77,21 @@ position:relative;
 overflow:hidden;
 }
 
+.hero p{
+margin-top:15px;
+margin-bottom:35px;
+font-size:18px;
+opacity:0.8;
+}
+
 .hero h1{
 font-size:60px;
 margin-bottom:20px;
+}
+
+.hero-content{
+position:relative;
+z-index:2;
 }
 
 /* PARTICLES */
@@ -91,15 +103,16 @@ height:100%;
 background-image:radial-gradient(#6c5cff 1px,transparent 1px);
 background-size:40px 40px;
 opacity:0.2;
+
+pointer-events:none;
 }
 
 /* BUTTON */
 
 .glow-btn{
-
-padding:14px 30px;
-border:none;
-border-radius:30px;
+display:inline-block;
+margin-top:10px;
+}
 
 background:linear-gradient(45deg,#6c5cff,#9b8cff);
 

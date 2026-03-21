@@ -4,61 +4,67 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CANVAS Agency</title>
-
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
+<!-- NAVBAR -->
+<header class="navbar glass">
+  <div class="logo">
+  <img src="images/logo.png" alt="CANVAS Agency Logo">
+</div>
 
-    <div class="hero-content">
-      <h1>Your Brand, Our Canvas.</h1>
-      <p>Creative marketing solutions to elevate your brand.</p>
-      <button class="btn">Start a Project</button>
+  <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#">Services</a>
+    <a href="#">Portfolio</a>
+    <a href="#" class="contact-btn">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+  <!-- Animated Gradient -->
+  <div class="gradient-bg"></div>
+
+  <div class="hero-content glass">
+    <h1>Your Brand, Our Canvas.</h1>
+    <p>Creative marketing solutions to elevate your brand.</p>
+    <button class="btn">Start a Project</button>
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+
+  <div class="about-left">
+    <h2>ABOUT US</h2>
+  </div>
+
+  <div class="about-cards">
+
+    <div class="folder-card">
+      <div class="folder-top"></div>
+      <div class="folder-content">
+        <h3>Our Mission</h3>
+      </div>
     </div>
 
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about">
-
-    <h2 class="about-title">ABOUT US</h2>
-
-    <div class="cards">
-
-      <div class="card-wrapper">
-        <div class="card">
-          <h3>Our Mission</h3>
-          <ul>
-            <li>Strategy first</li>
-            <li>Elevated design</li>
-            <li>Consistent presence</li>
-            <li>Real growth</li>
-          </ul>
-        </div>
+    <div class="folder-card">
+      <div class="folder-top"></div>
+      <div class="folder-content">
+        <h3>Our Vision</h3>
       </div>
-
-      <div class="card-wrapper">
-        <div class="card">
-          <h3>Our Vision</h3>
-          <ul>
-            <li>Lead culture</li>
-            <li>Define aesthetics</li>
-            <li>Build impact</li>
-            <li>Stay relevant</li>
-          </ul>
-        </div>
-      </div>
-
     </div>
 
-  </section>
+  </div>
+
+</section>
 
 </body>
 </html>

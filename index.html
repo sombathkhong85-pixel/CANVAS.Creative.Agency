@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CANVAS – Your Brand, Our Canvas.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="#home" class="nav-logo">
+      <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="18" cy="18" r="18" fill="white"/>
+        <path d="M24 12.5C22.3 11.5 20.3 11 18 11C13 11 9 15 9 18C9 21 13 25 18 25C20.3 25 22.3 24.5 24 23.5" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="25" cy="18" r="2.5" fill="#111"/>
+      </svg>
+      CANVAS
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact" class="btn-contact">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="mob-link">Home</a>
+    <a href="#about" class="mob-link">About</a>
+    <a href="#services" class="mob-link">Services</a>
+    <a href="#portfolio" class="mob-link">Portfolio</a>
+    <a href="#contact" class="mob-contact mob-link">Contact</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="home">
+    <div class="hero-card">
+      <div class="hero-gradient"></div>
+      <div class="hero-content">
+        <h1>Your Brand, Our Canvas.</h1>
+        <p>Creative marketing solutions to elevate your brand.</p>
+        <a href="#contact" class="btn-project">Start a Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="about-label">ABOUT US</div>
+    <div class="about-inner reveal">
+      <div class="about-cards">
+
+        <!-- Mission Card -->
+        <div class="folder-card">
+          <div class="folder-papers">
+            <div class="paper-back2"></div>
+            <div class="paper-back"></div>
+            <div class="paper">
+              <strong>At CANVAS Agency</strong>, our <strong>mission</strong> is to
+              <strong>transform brands</strong> into <strong>digital icons</strong> through
+              <strong>intentional strategy and elevated design.</strong>
+              We believe social media isn't just about <strong>posting</strong> — it's about
+              <strong>presence.</strong> Every brand has a story, and we exist to translate
+              that story into visuals and content that resonate, influence, and last.
+            </div>
+          </div>
+          <div class="folder-body">
+            <div class="folder-label">Our Mission</div>
+          </div>
+        </div>
+
+        <!-- Vision Card -->
+        <div class="folder-card">
+          <div class="folder-papers">
+            <div class="paper-back2"></div>
+            <div class="paper-back"></div>
+            <div class="paper">
+              To become a <strong>leading creative force</strong> shaping modern luxury brands
+              in the digital space — where aesthetics meet <strong>impact</strong>, and content
+              becomes <strong>culture.</strong>
+            </div>
+          </div>
+          <div class="folder-body">
+            <div class="folder-label">Our Vision</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MISSION / VISION EXPAND ── -->
+  <div class="expand-section">
+    <div class="expand-inner">
+
+      <div class="expand-block reveal">
+        <div class="expand-side-label">MISSION</div>
+        <div class="expand-grid">
+          <div class="expand-item">
+            <div class="num">1</div>
+            <h4>We don't just post content</h4>
+            <p>Every piece is planned with purpose (timing, audience, platform behavior).</p>
+          </div>
+          <div class="expand-item">
+            <div class="num">2</div>
+            <h4>We combine strategy + aesthetic</h4>
+            <p>Not just pretty visuals, not just data — both.</p>
+          </div>
+          <div class="expand-item">
+            <div class="num">3</div>
+            <h4>We focus on brand identity, not trends</h4>
+            <p>Your brand stays recognizable, not random.</p>
+          </div>
+          <div class="expand-item">
+            <div class="num">4</div>
+            <h4>We create content that performs</h4>
+            <p>Engagement, reach, conversions — not just likes.</p>
+          </div>
+          <div class="expand-item span2">
+            <div class="num">5</div>
+            <h4>We build long-term presence</h4>
+            <p>Not viral for a week, but relevant over time.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="expand-block reveal">
+        <div class="expand-side-label">VISION</div>
+        <div class="expand-grid">
+          <div class="expand-item">
+            <div class="num">1</div>
+            <h4>We aim to lead, not follow</h4>
+            <p>Setting trends, not chasing them.</p>
+          </div>
+          <div class="expand-item">
+            <div class="num">2</div>
+            <h4>We specialize in modern luxury branding</h4>
+            <p>Clean, minimal, high-end digital presence.</p>
+          </div>
+          <div class="expand-item">
+            <div class="num">3</div>
+            <h4>We want to shape digital culture</h4>
+            <p>Content people save, share, and remember.</p>
+          </div>
+          <div class="expand-item">
+            <div class="num">4</div>
+            <h4>We elevate how brands show up online</h4>
+            <p>Turning social media into a brand experience.</p>
+          </div>
+          <div class="expand-item span2">
+            <div class="num">5</div>
+            <h4>We grow with the future of platforms</h4>
+            <p>Always adapting, never outdated.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── SERVICES ── -->
+  <section id="services">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div class="tag">What We Do</div>
+        <h2>Services Built to<br>Elevate Your Brand</h2>
+      </div>
+      <div class="services-grid reveal">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <polyline points="2 12 12 17 22 12"/>
+            </svg>
+          </div>
+          <h3>Brand Identity</h3>
+          <p>Logo design, visual systems, and brand guidelines that make you instantly recognizable across every platform.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="14" rx="3"/>
+              <circle cx="12" cy="10" r="3" fill="white" stroke="none"/>
+            </svg>
+          </div>
+          <h3>Social Media Management</h3>
+          <p>End-to-end content creation, scheduling, and community management that grows your audience and builds loyalty.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <circle cx="12" cy="12" r="4" fill="white" stroke="none"/>
+            </svg>
+          </div>
+          <h3>Content Strategy</h3>
+          <p>Data-driven content plans tailored to your audience — so every post has a purpose and every campaign delivers results.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PORTFOLIO ── -->
+  <section id="portfolio">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div class="tag">Our Work</div>
+        <h2>Selected Projects</h2>
+      </div>
+      <div class="portfolio-grid reveal">
+        <div class="portfolio-item">
+          <div class="p-bg p-bg-1"></div>
+          <div class="p-overlay"><div><h4>Luxe Skincare</h4><span>Brand Identity · Social Media</span></div></div>
+        </div>
+        <div class="portfolio-item">
+          <div class="p-bg p-bg-2"></div>
+          <div class="p-overlay"><div><h4>Altitude Studios</h4><span>Content Strategy · Video</span></div></div>
+        </div>
+        <div class="portfolio-item">
+          <div class="p-bg p-bg-3"></div>
+          <div class="p-overlay"><div><h4>Velvet Collective</h4><span>Campaign · Paid Ads</span></div></div>
+        </div>
+        <div class="portfolio-item">
+          <div class="p-bg p-bg-4"></div>
+          <div class="p-overlay"><div><h4>Folio Finance</h4><span>Web Design · Branding</span></div></div>
+        </div>
+        <div class="portfolio-item">
+          <div class="p-bg p-bg-5"></div>
+          <div class="p-overlay"><div><h4>Arco Hospitality</h4><span>Social Media · Photography</span></div></div>
+        </div>
+        <div class="portfolio-item">
+          <div class="p-bg p-bg-6"></div>
+          <div class="p-overlay"><div><h4>Noir Atelier</h4><span>Brand Identity · Content</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="section-inner">
+      <h2 class="reveal">Let's Build Something<br>Extraordinary.</h2>
+      <p class="reveal">Tell us about your project and we'll get back to you within 24 hours.</p>
+      <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="text" placeholder="Brand / Company Name" />
+        <textarea placeholder="Tell us about your project..."></textarea>
+        <button type="submit" class="btn-send">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>© 2025 <span>CANVAS</span> Agency. All rights reserved. Crafted with intent.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

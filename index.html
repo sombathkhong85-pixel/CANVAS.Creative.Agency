@@ -4,32 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CANVAS – Your Brand, Our Canvas.</title>
+  <meta name="description" content="CANVAS is a creative agency specializing in branding, social media management, and content strategy.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ── NAV ── -->
-  <!-- ── NAV ── -->
-<nav>
-  <a href="#home" class="nav-logo">
-    <img src="Logo.png" alt="CANVAS Logo" class="logo-icon">
-  </a>      
-  
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#contact" class="btn-contact">Contact</a></li>
-  </ul>
+  <!-- ── CURSOR ── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
 
-  <button class="burger" id="burger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">
+    </span>CANVAS
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+      <li><a href="#contact" class="btn-contact nav-link">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
   <!-- ── MOBILE MENU ── -->
   <div class="mobile-menu" id="mobileMenu">
@@ -44,22 +46,34 @@
   <section id="home">
     <div class="hero-card">
       <div class="hero-gradient"></div>
+      <div class="hero-noise"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
       <div class="hero-content">
-        <h1>Your Brand, Our Canvas.</h1>
-        <p>Creative marketing solutions to elevate your brand.</p>
-        <a href="#contact" class="btn-project">Start a Project</a>
+        <div class="hero-tag reveal-hero">Creative Agency</div>
+        <h1 class="reveal-hero">Your Brand,<br>Our Canvas.</h1>
+        <p class="reveal-hero">Creative marketing solutions to elevate your brand.</p>
+        <a href="#contact" class="btn-project reveal-hero">
+          <span>Start a Project</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="hero-scroll-hint">
+        <div class="scroll-line"></div>
       </div>
     </div>
   </section>
 
   <!-- ── ABOUT ── -->
   <section id="about">
-    <div class="about-label">ABOUT US</div>
-    <div class="about-inner reveal">
+    <div class="about-label-wrap">
+      <div class="about-label">ABOUT US</div>
+    </div>
+    <div class="about-inner">
       <div class="about-cards">
 
         <!-- Mission Card -->
-        <div class="folder-card">
+        <div class="folder-card reveal" data-delay="0">
           <div class="folder-papers">
             <div class="paper-back2"></div>
             <div class="paper-back"></div>
@@ -73,12 +87,13 @@
             </div>
           </div>
           <div class="folder-body">
+            <div class="folder-glow"></div>
             <div class="folder-label">Our Mission</div>
           </div>
         </div>
 
         <!-- Vision Card -->
-        <div class="folder-card">
+        <div class="folder-card reveal" data-delay="1">
           <div class="folder-papers">
             <div class="paper-back2"></div>
             <div class="paper-back"></div>
@@ -89,6 +104,7 @@
             </div>
           </div>
           <div class="folder-body">
+            <div class="folder-glow"></div>
             <div class="folder-label">Our Vision</div>
           </div>
         </div>
@@ -107,7 +123,7 @@
           <div class="expand-item">
             <div class="num">1</div>
             <h4>We don't just post content</h4>
-            <p>Every piece is planned with purpose (timing, audience, platform behavior).</p>
+            <p>Every piece is planned with purpose — timing, audience, platform behavior.</p>
           </div>
           <div class="expand-item">
             <div class="num">2</div>
@@ -173,11 +189,12 @@
         <div class="tag">What We Do</div>
         <h2>Services Built to<br>Elevate Your Brand</h2>
       </div>
-      <div class="services-grid reveal">
+      <div class="services-grid">
 
-        <div class="service-card">
+        <div class="service-card reveal" data-delay="0">
+          <div class="service-number">01</div>
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="12 2 2 7 12 12 22 7 12 2"/>
               <polyline points="2 17 12 22 22 17"/>
               <polyline points="2 12 12 17 22 12"/>
@@ -185,33 +202,63 @@
           </div>
           <h3>Brand Identity</h3>
           <p>Logo design, visual systems, and brand guidelines that make you instantly recognizable across every platform.</p>
+          <div class="service-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
         </div>
 
-        <div class="service-card">
+        <div class="service-card reveal" data-delay="1">
+          <div class="service-number">02</div>
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="18" height="14" rx="3"/>
-              <circle cx="12" cy="10" r="3" fill="white" stroke="none"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
             </svg>
           </div>
           <h3>Social Media Management</h3>
           <p>End-to-end content creation, scheduling, and community management that grows your audience and builds loyalty.</p>
+          <div class="service-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
         </div>
 
-        <div class="service-card">
+        <div class="service-card reveal" data-delay="2">
+          <div class="service-number">03</div>
           <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/>
-              <circle cx="12" cy="12" r="4" fill="white" stroke="none"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
             </svg>
           </div>
           <h3>Content Strategy</h3>
           <p>Data-driven content plans tailored to your audience — so every post has a purpose and every campaign delivers results.</p>
+          <div class="service-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
         </div>
 
       </div>
     </div>
   </section>
+
+  <!-- ── MARQUEE ── -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Brand Identity</span><span class="dot">✦</span>
+      <span>Social Media</span><span class="dot">✦</span>
+      <span>Content Strategy</span><span class="dot">✦</span>
+      <span>Visual Design</span><span class="dot">✦</span>
+      <span>Digital Presence</span><span class="dot">✦</span>
+      <span>Brand Identity</span><span class="dot">✦</span>
+      <span>Social Media</span><span class="dot">✦</span>
+      <span>Content Strategy</span><span class="dot">✦</span>
+      <span>Visual Design</span><span class="dot">✦</span>
+      <span>Digital Presence</span><span class="dot">✦</span>
+      <span>Brand Identity</span><span class="dot">✦</span>
+      <span>Social Media</span><span class="dot">✦</span>
+      <span>Content Strategy</span><span class="dot">✦</span>
+      <span>Visual Design</span><span class="dot">✦</span>
+      <span>Digital Presence</span><span class="dot">✦</span>
+    </div>
+  </div>
 
   <!-- ── PORTFOLIO ── -->
   <section id="portfolio">
@@ -220,30 +267,84 @@
         <div class="tag">Our Work</div>
         <h2>Selected Projects</h2>
       </div>
-      <div class="portfolio-grid reveal">
-        <div class="portfolio-item">
-          <div class="p-bg p-bg-1"></div>
-          <div class="p-overlay"><div><h4>Luxe Skincare</h4><span>Brand Identity · Social Media</span></div></div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item reveal" data-delay="0">
+          <img src="Thonsarik.png" alt="Thon Sarik jewelry" class="p-img">
+          <div class="p-number">01</div>
+          <div class="p-overlay">
+            <div>
+              <h4>Thon Sarik jewelry</h4>
+              <span>Brand Identity</span>
+            </div>
+            <div class="p-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item reveal" data-delay="1">
           <div class="p-bg p-bg-2"></div>
-          <div class="p-overlay"><div><h4>Altitude Studios</h4><span>Content Strategy · Video</span></div></div>
+          <div class="p-number">02</div>
+          <div class="p-overlay">
+            <div>
+              <h4>Altitude Studios</h4>
+              <span>Content Strategy · Video</span>
+            </div>
+            <div class="p-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item reveal" data-delay="2">
           <div class="p-bg p-bg-3"></div>
-          <div class="p-overlay"><div><h4>Velvet Collective</h4><span>Campaign · Paid Ads</span></div></div>
+          <div class="p-number">03</div>
+          <div class="p-overlay">
+            <div>
+              <h4>Velvet Collective</h4>
+              <span>Campaign · Paid Ads</span>
+            </div>
+            <div class="p-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item reveal" data-delay="3">
           <div class="p-bg p-bg-4"></div>
-          <div class="p-overlay"><div><h4>Folio Finance</h4><span>Web Design · Branding</span></div></div>
+          <div class="p-number">04</div>
+          <div class="p-overlay">
+            <div>
+              <h4>Folio Finance</h4>
+              <span>Web Design · Branding</span>
+            </div>
+            <div class="p-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item reveal" data-delay="4">
           <div class="p-bg p-bg-5"></div>
-          <div class="p-overlay"><div><h4>Arco Hospitality</h4><span>Social Media · Photography</span></div></div>
+          <div class="p-number">05</div>
+          <div class="p-overlay">
+            <div>
+              <h4>Arco Hospitality</h4>
+              <span>Social Media · Photography</span>
+            </div>
+            <div class="p-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item reveal" data-delay="5">
           <div class="p-bg p-bg-6"></div>
-          <div class="p-overlay"><div><h4>Noir Atelier</h4><span>Brand Identity · Content</span></div></div>
+          <div class="p-number">06</div>
+          <div class="p-overlay">
+            <div>
+              <h4>Noir Atelier</h4>
+              <span>Brand Identity · Content</span>
+            </div>
+            <div class="p-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -251,25 +352,57 @@
 
   <!-- ── CONTACT ── -->
   <section id="contact">
+    <div class="contact-bg"></div>
+    <div class="contact-orb"></div>
     <div class="section-inner">
-      <h2 class="reveal">Let's Build Something<br>Extraordinary.</h2>
-      <p class="reveal">Tell us about your project and we'll get back to you within 24 hours.</p>
+      <div class="contact-header reveal">
+        <div class="tag">Get In Touch</div>
+        <h2>Let's Build Something<br>Extraordinary.</h2>
+        <p>Tell us about your project and we'll get back to you within 24 hours.</p>
+      </div>
       <form class="contact-form reveal" onsubmit="handleSubmit(event)">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Email Address" required />
-        <input type="text" placeholder="Brand / Company Name" />
-        <textarea placeholder="Tell us about your project..."></textarea>
-        <button type="submit" class="btn-send">Send Message</button>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="hello@brand.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Brand / Company Name</label>
+          <input type="text" placeholder="Your Company" />
+        </div>
+        <div class="form-group">
+          <label>Tell us about your project</label>
+          <textarea placeholder="Describe your vision, goals, and what you're looking to achieve..."></textarea>
+        </div>
+        <button type="submit" class="btn-send">
+          <span>Send Message</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
       </form>
     </div>
   </section>
 
   <!-- ── FOOTER ── -->
   <footer>
-    <p>© 2025 <span>CANVAS</span> Agency. All rights reserved. Crafted with intent.</p>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="Logo.png" alt="CANVAS" class="logo-icon">
+      </div>
+      <p>© 2025 <span>CANVAS</span> Agency. All rights reserved. Crafted with intent.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
-
 </body>
 </html>
